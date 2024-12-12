@@ -1,4 +1,6 @@
 norm! ggVGd
+norm! i<link rel="stylesheet" href="index-style.css" />
+put ='' | put =''
 norm! i# AI Images
 put ='' | put =''
 norm! i:::index
@@ -19,10 +21,10 @@ norm! G
 put ='' 
 norm! Go<style>
 norm! o</style>
-norm! ?^<styl
+"norm! ?^<styl
 
-if filereadable("template-style.css")
-	:r !cat template-style.css
-endif
+"if filereadable("template-style.css")
+	":r !cat template-style.css
+"endif
 
 norm \co
