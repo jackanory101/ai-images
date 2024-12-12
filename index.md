@@ -1,11 +1,11 @@
 # AI Images
 
 :::index
-[city-plan.html](city-plan/city-plan.html)  
 [crowd-skinny-men.html](crowd-skinny-men/crowd-skinny-men.html)  
 [foundry-illustration.html](foundry-illustration/foundry-illustration.html)  
 [jess-ram-ireland.html](jess-ram-ireland/jess-ram-ireland.html)  
 [kanes-house.html](kanes-house/kanes-house.html)  
+[klimt-spoodle.html](klimt-spoodle/klimt-spoodle.html)  
 [man-dog-city.html](man-dog-city/man-dog-city.html)  
 [man-guitar-cassie.html](man-guitar-cassie/man-guitar-cassie.html)  
 [savage-cassie.html](savage-cassie/savage-cassie.html)  
@@ -24,6 +24,8 @@ html {
 body {
 	background:transparent;
 	font-size:24px;
+	position: relative;
+	z-index: 10;
 }
 
 html::before {

@@ -4,5 +4,5 @@
 " submatch(1) the first match
 " \s* accounts for preceding spaces
 "
-:%s/>\s*\zs\(.*\)\.html\ze\s*</\=substitute(submatch(1),'-',' ','g')/
+:%s/">\s*\zs\(.*\)\.html\ze\s*</\=substitute(submatch(1),'-',' ','g')/
 
