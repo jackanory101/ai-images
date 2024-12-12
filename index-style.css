@@ -7,7 +7,7 @@ html {
 
 body {
 	background:transparent;
-	font-size:24px;
+	font-size:20px;
 	position: relative;
 	z-index: 10;
 }
@@ -25,7 +25,7 @@ html::before {
         transparent 15deg,
         #a26c6c6e 30deg
     );
-    animation: rotate-bg 40s linear infinite;
+    animation: rotate-bg 80s linear infinite;
     transform-origin: center;
 }
 
