@@ -1,6 +1,7 @@
 # AI Images
 
 :::index
+[city-plan.html](city-plan/city-plan.html)  
 [crowd-skinny-men.html](crowd-skinny-men/crowd-skinny-men.html)  
 [foundry-illustration.html](foundry-illustration/foundry-illustration.html)  
 [jess-ram-ireland.html](jess-ram-ireland/jess-ram-ireland.html)  
@@ -16,35 +17,55 @@
 html {
     margin: 0;
     height: 100%;
+    overflow: hidden;
     background: #090707;
-    background-image: repeating-conic-gradient( #99737396 14deg, #664646a3 15deg, transparent 15deg, #a26c6c6e 30deg );
-    background-size: cover;
-    background-position: static;
-    background-attachment: fixed;
 }
+
 body {
-	background-color: transparent;
-	background-image: none;
-	display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
-    height: 100vh;            /* Makes the container full height of the viewport */
-	font-size:20px;
+	background:transparent;
+	font-size:24px;
+}
+
+html::before {
+    content: '';
+    position: absolute;
+    top: -550px;
+    left: -500px;
+    width: 243%;
+    height: 250%;
+    background: repeating-conic-gradient(
+        #99737396 14deg,
+        #664646a3 15deg,
+        transparent 15deg,
+        #a26c6c6e 30deg
+    );
+    animation: rotate-bg 40s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate-bg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 div#main {
-	margin: auto auto;
-	color: white;
-	text-align: center;
-	margin-top: 200px;
+    margin: auto auto;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+	background:transparent;
 }
 h1 {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 p {
 }
 a:link,a:visited,a:hover,a:visited:hover,a:hover:hover {
-	border-bottom: none;
-	border-bottom-style:none;
+    border-bottom: none;
+    border-bottom-style:none;
 }
 a {
     text-decoration: underline !important; /* Add underline */
@@ -55,13 +76,13 @@ a {
 
 /* Style for links when hovered */
 a:hover {
-	color: #bfacac !important;
+    color: #bfacac !important;
 }
 .new-item {
-	color: #e19634;
-	font-style: italic;
-	font-weight: bold;
-	font-size: smaller;
-}	
+    color: #e19634;
+    font-style: italic;
+    font-weight: bold;
+    font-size: smaller;
+}   
 
 </style>

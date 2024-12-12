@@ -27,45 +27,66 @@
 <div id="main">
 <h1 id="ai-images">AI Images</h1>
 <div class="index">
-<p><a
-		   href="crowd-skinny-men/crowd-skinny-men.html">crowd-skinny-men.html</a><span class='new-item'>&nbsp;(NEW)</span><br />
+	<p><a href="city plan/city plan.html">city plan</a><span class='new-item'>&nbsp;(NEW)</span><br />
 <a
-href="foundry-illustration/foundry-illustration.html">foundry-illustration.html</a><br />
+href="crowd-skinny-men/crowd-skinny-men.html">crowd skinny men</a><br />
 <a
-		href="jess-ram-ireland/jess-ram-ireland.html">jess-ram-ireland.html</a><span class='new-item'>&nbsp;(NEW)</span><br />
-<a href="kanes-house/kanes-house.html">kanes-house.html</a><br />
-<a href="man-dog-city/man-dog-city.html">man-dog-city.html</a><br />
+href="foundry-illustration/foundry-illustration.html">foundry illustration</a><br />
 <a
-		href="man-guitar-cassie/man-guitar-cassie.html">man-guitar-cassie.html</a><span class='new-item'>&nbsp;(NEW)</span><br />
-<a href="savage-cassie/savage-cassie.html">savage-cassie.html</a><br />
+href="jess-ram-ireland/jess-ram-ireland.html">jess ram ireland</a><br />
+<a href="kanes-house/kanes-house.html">kanes house</a><br />
+<a href="man-dog-city/man-dog-city.html">man dog city</a><br />
 <a
-href="spoodle-foundry/spoodle-foundry.html">spoodle-foundry.html</a><br />
-<a href="video/cassie-vw/cassie-vw.html">cassie-vw.html</a></p>
+href="man-guitar-cassie/man-guitar-cassie.html">man guitar cassie</a><br />
+<a href="savage-cassie/savage-cassie.html">savage cassie</a><br />
+<a
+href="spoodle-foundry/spoodle-foundry.html">spoodle foundry</a><br />
+<a href="video/cassie-vw/cassie-vw.html">cassie vw</a></p>
 </div>
 <style>
 html {
     margin: 0;
     height: 100%;
+    overflow: hidden;
     background: #090707;
-    background-image: repeating-conic-gradient( #99737396 14deg, #664646a3 15deg, transparent 15deg, #a26c6c6e 30deg );
-    background-size: cover;
-    background-position: static;
-    background-attachment: fixed;
 }
+
 body {
-    background-color: transparent;
-    background-image: none;
-    display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
-    height: 100vh;            /* Makes the container full height of the viewport */
-    font-size:20px;
+    background:transparent;
+    font-size:24px;
+}
+
+html::before {
+    content: '';
+    position: absolute;
+    top: -550px;
+    left: -500px;
+    width: 243%;
+    height: 250%;
+    background: repeating-conic-gradient(
+        #99737396 14deg,
+        #664646a3 15deg,
+        transparent 15deg,
+        #a26c6c6e 30deg
+    );
+    animation: rotate-bg 40s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate-bg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 div#main {
     margin: auto auto;
     color: white;
     text-align: center;
     margin-top: 200px;
+    background:transparent;
 }
 h1 {
     margin-bottom: 40px;

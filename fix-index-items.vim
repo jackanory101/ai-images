@@ -1,7 +1,8 @@
 " remove .html suffix and hyphens in index list
+" \zs start match for submatch()
+" \ze emd match for submatch()
+" submatch(1) the first match
+" \s* accounts for preceding spaces
 "
-g/href[^>]*\.html/ exe "norm! /href\<CR>/>\<CR>lv/<\<CR>h\<Esc>gv:s/-/ /g"
+:%s/>\s*\zs\(.*\)\.html\ze\s*</\=substitute(submatch(1),'-',' ','g')/
 
-"g/href[^>]*\.html/ exe "norm! /href\<CR>/>\<CR>lv/<\<CR>h\<Esc>:'<,'>s/-/ /g"
-"
-"g/href[^>]*\.html/ norm! /href/>lv/<hgv:'<,'>s/-/ /g
