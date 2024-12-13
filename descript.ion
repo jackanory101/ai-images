@@ -1,7 +1,0 @@
-fix-index-items.vim remove hyphens and ext from links
-generate-index.vim create index.md links from html files found in */**
-highlight-new-in-index.vim with line selected, add span NEW 
-highlight-new-remove.vim on selected line, remove span NEW
-template-style.css Now redundant
-index-style.css link to this file written when generating md index
-fix-html.vim fix css links in HTML files
