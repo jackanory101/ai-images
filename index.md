@@ -10,6 +10,8 @@
 [klimt-spoodle.html](klimt-spoodle/klimt-spoodle.html)  
 [man-dog-city.html](man-dog-city/man-dog-city.html)  
 [man-guitar-cassie.html](man-guitar-cassie/man-guitar-cassie.html)  
+[perth-galway-xmas.html](perth-galway-xmas/perth-galway-xmas.html)  
+[santa.html](santa/santa.html)  
 [savage-cassie.html](savage-cassie/savage-cassie.html)  
 [spoodle-foundry.html](spoodle-foundry/spoodle-foundry.html)  
 [cassie-vw.html](video/cassie-vw/cassie-vw.html)  
