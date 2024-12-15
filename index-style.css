@@ -70,6 +70,20 @@ a:hover,a:visited:hover {
     color: #e19634;
     font-style: italic;
     font-weight: bold;
-    font-size: smaller;
+    font-size: 0.5em;
+	text-decoration:none !important;
 }   
-
+.deleted {
+	text-decoration: line-through;
+	/*font-size: 0.9em;*/
+	color:#aaa !important;
+    font-style: italic;
+}
+.deleted a {
+	color:#aaa !important;
+}
+.new-item.deleted {
+	font-size:0.5em !important;
+	color: #f4791f !important;
+}
+				
