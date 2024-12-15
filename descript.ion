@@ -1,4 +1,4 @@
-fix-index-items.vim Run this on html file to clean up links titles
 generate-index.vim Generate markdown index
 highlight-new-in-index.vim Run this on html file index
 highlight-new-remove.vim Run this on html index
+fix-index-items.vim_bak Run this on html file to clean up links titles
